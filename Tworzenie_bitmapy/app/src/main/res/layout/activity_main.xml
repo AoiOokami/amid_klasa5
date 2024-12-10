@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/prostokaty_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="kliknieto_prostakoty"
+        android:text="prostokaty"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/epilsy_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.14" />
+
+    <Button
+        android:id="@+id/kreuj_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:onClick="kliknieto_kreuj"
+        android:text="kreuj"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <Button
+        android:id="@+id/linie_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="klikniecie_lini"
+        android:text="linie"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/epilsy_button"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kreuj_button"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <Button
+        android:id="@+id/epilsy_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="kliknieto_elipsy"
+        android:text="epilsy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/prostokaty_button"
+        app:layout_constraintStart_toEndOf="@+id/linie_button"
+        app:layout_constraintTop_toBottomOf="@+id/czysc_button"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <Button
+        android:id="@+id/czysc_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="kliknieto_czysc"
+        android:text="czysc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="407dp"
+        android:layout_height="569dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prostokaty_button"
+        app:srcCompat="@android:drawable/alert_light_frame" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
