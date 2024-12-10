@@ -1,0 +1,27 @@
+[
+  {
+    "productName": "Produkt 1",
+    "price": 10.50,
+    "description": "Pierwszy wpis do bazy"
+  },
+  {
+    "productName": "Produkt 2",
+    "price": 20.00,
+    "description": "Opis 2"
+  },
+  {
+    "productName": "Produkt 3",
+    "price": 15.75,
+    "description": "Trzeci wpis"
+  },
+  {
+    "productName": "Produkt 4",
+    "price": 200.00,
+    "description": "Drogi produkt"
+  },
+  {
+    "productName": "Produkt 5",
+    "price": 5.00,
+    "description": "Ostatni wpis"
+  }
+]
